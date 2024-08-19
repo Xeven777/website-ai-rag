@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Bot, User } from "lucide-react";
+import Markdown from "react-markdown";
 
 interface MessageProps {
   content: string;
@@ -37,10 +38,9 @@ export const Message = ({ content, isUserMessage }: MessageProps) => {
                 {isUserMessage ? "You" : "Website"}
               </span>
             </div>
-
-            <p className="text-sm font-normal py-2.5 text-gray-900 dark:text-white">
-              {content}
-            </p>
+            <div className="text-sm font-normal py-2.5 text-gray-900 dark:text-white">
+              <Markdown>{content}</Markdown>
+            </div>
           </div>
         </div>
       </div>
