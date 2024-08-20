@@ -45,7 +45,7 @@ export function LandingPage() {
           </Link>
         </nav>
       </header>
-      <main className="flex-1">
+      <main className="flex-1 px-3">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="grid gap-6 px-2 md:px-24 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
             <div className="flex flex-col justify-center space-y-4">
@@ -74,13 +74,13 @@ export function LandingPage() {
               width="550"
               height="550"
               alt="Hero"
-              className="mx-auto aspect-video object-cover overflow-hidden rounded-xl object-top sm:w-full lg:order-last lg:aspect-square"
+              className="mx-auto object-cover overflow-hidden rounded-xl object-top sm:w-full lg:order-last aspect-square"
             />
           </div>
         </section>
         <InputSection />
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-          <div className="container px-4 md:px-6">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 rounded-2xl">
+          <div className="container px-4 sm:px-10 md:px-16">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
@@ -151,7 +151,7 @@ export function LandingPage() {
           </div>
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 sm:px-10 md:px-16">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
@@ -207,7 +207,7 @@ export function LandingPage() {
           </div>
         </section>
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 sm:px-10 md:px-16 border-t">
         <p className="text-xs text-muted-foreground">
           &copy; 2024 AI Chatbot. All rights reserved.
         </p>
