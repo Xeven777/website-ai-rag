@@ -7,11 +7,13 @@ import Image from "next/image";
 import robo2 from "@/assets/Designer (6).png";
 import { BotIcon, CheckIcon } from "lucide-react";
 import InputSection from "./InputSection";
+import BackgroundGrid from "./ui/BgGrid";
 
 export function LandingPage() {
   return (
     <div className="flex flex-col">
-      <header className="px-4 lg:px-6 h-14 flex items-center">
+      <BackgroundGrid color="#3d4a60" />
+      <header className="px-4 z-40 lg:px-6 h-14 flex items-center max-w-7xl shadow-lg shadow-zinc-800/30 top-0 sticky backdrop-blur rounded-2xl w-full mx-auto">
         <Link
           href="/"
           className="flex gap-2 items-center justify-center"
@@ -45,9 +47,9 @@ export function LandingPage() {
           </Link>
         </nav>
       </header>
-      <main className="flex-1 px-3">
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="grid gap-6 px-2 md:px-24 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+      <main className="flex-1 px-3 z-20">
+        <section className="w-full py-12 max-w-7xl mx-auto md:py-24 lg:py-32">
+          <div className="grid gap-6 px-2 md:px-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
@@ -59,11 +61,13 @@ export function LandingPage() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 md:gap-4 min-[400px]:flex-row">
-                <Button asChild>
-                  <Link href="#main" scroll>
+                <a href="#main">
+                  <button className="group relative rounded-lg border-2 border-zinc-500 bg-zinc-500 px-5 py-2 font-medium text-white duration-1000 hover:shadow-lg hover:shadow-zinc-500/50">
+                    <span className="absolute left-0 top-0 size-full rounded-md border border-dashed border-zinc-50 shadow-inner shadow-white/30 group-active:shadow-white/10"></span>
+                    <span className="absolute left-0 top-0 size-full rotate-180 rounded-md border-zinc-50 shadow-inner shadow-black/30 group-active:shadow-black/10"></span>
                     Get Started
-                  </Link>
-                </Button>
+                  </button>
+                </a>
                 <Button variant="outline">Learn More</Button>
               </div>
             </div>
@@ -209,7 +213,7 @@ export function LandingPage() {
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 sm:px-10 md:px-16 border-t">
         <p className="text-xs text-muted-foreground">
-          &copy; 2024 AI Chatbot. All rights reserved.
+          &copy; 2024 AskWebSite. All rights reserved.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link
