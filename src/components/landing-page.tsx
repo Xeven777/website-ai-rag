@@ -56,8 +56,8 @@ export function LandingPage() {
                   Power of AI Conversation with Websites
                 </h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  Our advanced AI chatbot helps you provide personalized support
-                  and engage with your customers like never before.
+                  Just enter the website and chat with the AI to get detailed
+                  insights and information on the go!
                 </p>
               </div>
               <div className="flex flex-col gap-2 md:gap-4 min-[400px]:flex-row">
