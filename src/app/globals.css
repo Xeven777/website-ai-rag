@@ -41,6 +41,11 @@
   }
 }
 
+@layer utilities {
+  .grad {
+    @apply bg-gradient-to-br bg-clip-text text-transparent from-zinc-100 via-zinc-400 to-zinc-400/30;
+  }
+}
 .spinner {
   width: 44px;
   height: 44px;

@@ -11,7 +11,7 @@ export const Message = ({ content, isUserMessage }: MessageProps) => {
   return (
     <div
       className={cn({
-        "bg-zinc-800": isUserMessage,
+        "bg-zinc-900": isUserMessage,
         "bg-zinc-900/25": !isUserMessage,
       })}
     >
@@ -34,11 +34,11 @@ export const Message = ({ content, isUserMessage }: MessageProps) => {
 
           <div className="flex flex-col ml-6 w-full">
             <div className="flex items-center space-x-2">
-              <span className="text-sm font-semibold text-gray-900 dark:text-white">
-                {isUserMessage ? "You" : "Website"}
+              <span className="text-sm md:text-base  font-semibold text-zinc-100">
+                {isUserMessage ? "You" : "AskWebsiteAI"}
               </span>
             </div>
-            <div className="text-sm font-normal py-2.5 text-gray-900 dark:text-white">
+            <div className="text-sm md:text-base font-normal py-2.5 text-zinc-200">
               <Markdown>{content}</Markdown>
             </div>
           </div>

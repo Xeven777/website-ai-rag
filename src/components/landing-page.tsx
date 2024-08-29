@@ -52,8 +52,8 @@ export function LandingPage() {
           <div className="grid gap-6 px-2 md:px-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  Unlock the Power of AI Conversation
+                <h1 className="text-3xl grad font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">
+                  Power of AI Conversation with Websites
                 </h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
                   Our advanced AI chatbot helps you provide personalized support
@@ -82,6 +82,7 @@ export function LandingPage() {
             />
           </div>
         </section>
+        <div className="h-0.5 w-1/2 bg-gradient-to-r from-transparent to-transparent via-white rounded-lg mx-auto"></div>
         <InputSection />
         <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 rounded-2xl">
           <div className="container px-4 sm:px-10 md:px-16">
@@ -90,13 +91,14 @@ export function LandingPage() {
                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
                   Key Features
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                <h2 className="text-3xl grad font-bold tracking-tighter sm:text-5xl">
                   Powerful AI Capabilities
                 </h2>
-                <p className="max-w-5xl text-muted-foreground md:text-xl lg:text-base xl:text-xl">
-                  Our AI chatbot leverages advanced natural language processing
-                  and machine learning to provide personalized responses and
-                  seamless integration with your business.
+                <p className="max-w-5xl text-muted-foreground lg:text-lg">
+                  Our AI chatbot harnesses the power of advanced technology to
+                  transform the way you interact with online content. Discover
+                  how our solution can elevate your user experience with its
+                  state-of-the-art features:
                 </p>
               </div>
             </div>
@@ -120,8 +122,20 @@ export function LandingPage() {
                         Natural Language Processing
                       </h3>
                       <p className="text-muted-foreground">
-                        Understand and respond to natural language with
-                        human-like conversation.
+                        Our chatbot utilizes sophisticated (NLP) algorithms to
+                        engage in human-like conversations.
+                      </p>
+                    </div>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckIcon className="h-5 w-5 text-primary" />
+                    <div>
+                      <h3 className="text-lg font-bold">
+                        Advanced Learning and Adaptation
+                      </h3>
+                      <p className="text-muted-foreground">
+                        The chatbot continuously learns from interactions,
+                        improving its responses over time.
                       </p>
                     </div>
                   </li>
@@ -132,20 +146,8 @@ export function LandingPage() {
                         Personalized Responses
                       </h3>
                       <p className="text-muted-foreground">
-                        Tailor your chatbot&apos;s responses to each user&apos;s
-                        unique needs and preferences.
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckIcon className="h-5 w-5 text-primary" />
-                    <div>
-                      <h3 className="text-lg font-bold">
-                        Seamless Integration
-                      </h3>
-                      <p className="text-muted-foreground">
-                        Easily integrate our chatbot with your existing
-                        platforms and workflows.
+                        Customize interactions based on each user&apos;s unique
+                        needs and preferences.
                       </p>
                     </div>
                   </li>
@@ -158,10 +160,10 @@ export function LandingPage() {
           <div className="container px-4 sm:px-10 md:px-16">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
+                <div className="inline-block grad rounded-lg bg-muted px-3 py-1 text-sm">
                   Testimonials
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                <h2 className="text-3xl font-bold grad tracking-tighter sm:text-5xl">
                   What Our Customers Say
                 </h2>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">

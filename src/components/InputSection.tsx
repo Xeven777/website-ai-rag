@@ -3,7 +3,7 @@ import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import robo2 from "@/assets/jajd.jpg";
-import { ArrowRight, Loader2 } from "lucide-react";
+import { ArrowRight, Loader2, SeparatorHorizontal } from "lucide-react";
 
 import React, { FormEvent, useState } from "react";
 
@@ -35,7 +35,7 @@ const InputSection = () => {
             <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
               Key Features
             </div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+            <h2 className="text-3xl font-bold grad tracking-tighter sm:text-5xl">
               Powerful AI Capabilities
             </h2>
             <p className="max-w-5xl text-muted-foreground md:text-xl lg:text-base xl:text-xl">
@@ -50,7 +50,9 @@ const InputSection = () => {
             className="flex flex-col justify-center space-y-2"
             onSubmit={(e) => handleSubmit(e)}
           >
-            <h2>Just enter the website/blog /article link :</h2>
+            <h2 className="text-zinc-300">
+              Just enter the website/blog /article link :
+            </h2>
             <Input
               value={websitelink}
               name="url"
