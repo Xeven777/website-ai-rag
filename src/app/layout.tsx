@@ -7,6 +7,7 @@ const inter = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ask The website",
+  metadataBase: new URL("https://askwebsite.vercel.app/"),
 };
 
 export default function RootLayout({
@@ -17,9 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(inter.className, "min-h-screen antialiased")}>
-        <div className="h-screen text-foreground bg-background">
-          {children}
-        </div>
+        <div className="h-screen text-foreground bg-background">{children}</div>
       </body>
     </html>
   );
